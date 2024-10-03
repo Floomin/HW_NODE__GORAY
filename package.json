@@ -1,0 +1,28 @@
+{
+  "name": "hw_47",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ДЗ 47. Basic Express.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.5",
+    "prettier": "^3.3.3"
+  }
+}
