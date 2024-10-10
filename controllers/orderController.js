@@ -1,16 +1,14 @@
 import { carts, orders } from '../storage.js';
 import { randomUUID } from 'crypto';
 
-export const checkout = (req, res) => {
-  const userId = req.headers['x-user-id'];
-
-  if (!userId) {
-    return res.status(401).json({ error: 'User ID is required' });
-  }
+export const checkout = (req, res, next) => {
+  const userId = req.userId;
 
   const cart = carts.find((c) => c.userId === userId);
   if (!cart || cart.products.length === 0) {
-    return res.status(400).json({ error: 'Cart is empty' });
+    const error = new Error('Cart is empty');
+    error.statusCode = 400;
+    return next(error);
   }
 
   const totalPrice = cart.products.reduce(
