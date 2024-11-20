@@ -1,0 +1,23 @@
+[
+  {
+    "id": "order-35063f2a-d7f8-40fc-829e-1c893fcef374",
+    "userId": "35063f2a-d7f8-40fc-829e-1c893fcef374",
+    "products": [
+      {
+        "id": "1",
+        "name": "Sample Product",
+        "description": "Description of the product",
+        "category": "Electronics",
+        "price": 199.99
+      },
+      {
+        "id": "1",
+        "name": "Sample Product",
+        "description": "Description of the product",
+        "category": "Electronics",
+        "price": 199.99
+      }
+    ],
+    "totalPrice": 399.98
+  }
+]

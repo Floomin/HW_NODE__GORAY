@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "name": "Sample Product",
+    "description": "Description of the product",
+    "category": "Electronics",
+    "price": 199.99
+  }
+]
